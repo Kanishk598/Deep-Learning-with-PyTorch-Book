@@ -13,10 +13,10 @@ def loss_fn(t_p, t_c):
     sq_diffs = (t_p - t_c)**2
     return sq_diffs.mean()
 
-w = torch.ones(())
-b = torch.zeros(())
+#w = torch.ones(())
+#b = torch.zeros(())
 
-lr = 1e-4
+#lr = 1e-4
 
 def dloss_by_dt_p(t_p, t_c):
     return 2*(t_p - t_c)/(t_p.size(0))
