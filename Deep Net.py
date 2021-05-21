@@ -18,7 +18,7 @@ seq_model = nn.Sequential(
     ])
 )
 
-optimizer = optim.Adam(seq_model.parameters(), lr = 1e-2)
+optimizer = optim.RMSprop(seq_model.parameters(), lr = 1e-2)
 
 t_range = torch.arange(20., 90.).unsqueeze(1)
 plt.xlabel("Fahrenheit")
